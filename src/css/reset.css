@@ -1,4 +1,10 @@
 /* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -14,6 +20,7 @@ p:last-child {
 }
 
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -33,3 +40,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
