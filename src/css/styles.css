@@ -126,7 +126,7 @@ display: none;
 .loader:after {
   content: '';
   border-radius: 50%;
-  position: absolute;
+  /* position: absolute; */
   inset: 0;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
 }
@@ -175,7 +175,6 @@ width: 1128px;
   width: 360px;
   height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
   /* display: block; */
 }
 
@@ -184,11 +183,6 @@ width: 1128px;
   height: 640px;
 }
 
-
-.gallery-image:hover,
-.gallery-image:focus {
-  transform: scale(1.04);
-} 
 
 .gallery-content {
   display: flex;
@@ -219,6 +213,11 @@ font-family: var(--font-family);
   line-height: 133%;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  max-height: 40px;
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .text {
