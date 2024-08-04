@@ -8,6 +8,16 @@ import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+ // Ініціалізація SimpleLightbox
+const lightbox = new SimpleLightbox('.gallery-item a', {
+    captions: true,
+    captionSelector: 'img',
+    captionType: 'attr',
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+});
+
 export function showError(error) {
     iziToast.error({
         position: "topRight",
@@ -37,15 +47,7 @@ export function showError(error) {
 
       document.querySelector('.gallery-list').insertAdjacentHTML("beforeend", images);
       
-      // Ініціалізація SimpleLightbox
-const lightbox = new SimpleLightbox('.gallery-item a', {
-    captions: true,
-    captionSelector: 'img',
-    captionType: 'attr',
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-    captionDelay: 250,
-});
+     
 
     lightbox.refresh(); // Оновлення Lightbox
     

@@ -146,9 +146,7 @@ display: none;
   }
 }
 
-.gallery {
-/* position: relative; */
-}
+
 .gallery-list {
 width: 1128px;
   display: flex;
